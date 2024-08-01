@@ -3,3 +3,5 @@ results/
 html/
 *.pyc
 __pycache__/
+
+benchmarks/third-party/*
