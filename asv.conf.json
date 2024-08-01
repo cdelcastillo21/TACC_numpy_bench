@@ -1,0 +1,18 @@
+{
+    "project": "TACC_numpy_bench",
+    "project_url": "https://github.com/cdelcastillo21/TACC_numpy_bench",
+    "repo": "https://github.com/cdelcastillo21/TACC_numpy_bench.git",
+    "environment_type": "conda",
+    "show_commit_url": "https://github.com/cdelcastillo21/TACC_numpy_bench/commit/",
+    "conda_channels": ["conda-forge", "defaults"],
+    "matrix": {
+        "req": {
+            "numpy": ["", "conda-forge::numpy", "anaconda::numpy", "pip+numpy"]
+        }
+    },
+    "pythons": ["3.10", "/scratch/06307/clos21/conda"],
+    "benchmark_dir": "benchmarks",
+    "env_dir": "env",
+    "results_dir": "results",
+    "html_dir": "html"
+}
