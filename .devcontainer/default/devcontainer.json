@@ -1,0 +1,23 @@
+{
+    "name": "HPC Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "stkb.rewrap"
+            ]
+        }
+    },
+    "remoteUser": "clos21",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/clos21/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/home/clos21/workspace",
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/home/clos21/.ssh,type=bind,consistency=cached"
+    ],
+    "runArgs": ["--cap-add=SYS_PTRACE"]
+}
