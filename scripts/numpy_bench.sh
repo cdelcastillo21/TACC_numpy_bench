@@ -116,7 +116,7 @@ import time
 import psutil
 import csv
 
-sizes = [100, 200, 500, 1000, 2000, 5000, 10000]
+sizes = [100, 200, 500, 1000, 2000]
 
 results = []
 
